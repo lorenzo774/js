@@ -1,11 +1,13 @@
 function Person(...args){
 
+    // Destructuring the constructor arguments
     const [name, surname, age, profession] = args;
     this.name = name;
     this.surname = surname;
     this.age = age;
     this.profession = profession;
     
+    // printObj method to print all the properties (but not the printObj) of the object
     this.printObj = () => {
         for (const prop in this) {
             let str = prop;
